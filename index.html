@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Online</title>
+
+    <style>
+        body{
+        
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        table{
+            width:2000px;
+            margin:auto;
+        }
+        img{
+            height:200px;
+            width:200px;
+            padding:10px;
+            object-fit: contain;
+
+        }
+        th{
+            text-align: center;
+            padding:10px;
+        }
+        td{
+            text-align:center;
+            padding:10px;
+        }
+      .footer{
+        border-top:1px solid black;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2rem;
+      }
+      h1{
+        text-align: center;
+      }
+      input{
+        font-size:2rem;
+        margin-left:800px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width:1000px;
+        text-align:center;
+        padding-bottom:100px;
+      }
+      button{
+        font-size:2rem;
+        margin-left:800px;
+        
+        margin-bottom: 30px;
+        width:1000px;
+        text-align:center;
+  
+      }
+      .linkcss{
+        color:black;
+        text-decoration:overline;
+      }
+      
+        
+      .imgcss{
+        display:none;
+      }
+    
+      
+        
+
+    </style>
+
+</head>
+<body>
+    <div>
+    <button onclick="changeBackground()">Change the background color of the page</button>
+    <h1>SHOP WITH HENA!</h1>
+    <button onclick="changeH1('Check out the store')">Change the title</button>
+    <button onclick="allButtons()">Style on links</button>
+    <button onclick="allImages()">Hide all images</button>
+    <button onclick="priceColor()">Change price color</button>
+    </div>
+    <div>
+        <table border="1">
+            <tr>
+                <th>Product</th>
+                <th>Title</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Link where you can buy it</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>SAMSUNG Galaxy A13 </td>
+                <td><img src="./61PkHEMqZfL._AC_SY879_.jpg" alt="SAMSUNG Galaxy A13"/></td>
+                <td><ul><li>LONG-LASTING BATTERY</li>
+                <li>ENHANCED 5G PERFORMANCE</li><li>EXPANDABLE STORAGE</li></ul></td>
+                <td class="colorChange">224€</td>
+                <td><a href="https://www.amazon.com/SAMSUNG-Unlocked-Smartphone-Expandable-Infinite/dp/B09MZCNGSD/ref=sr_1_2_sspa?crid=252K048LBCT6J&keywords=smartphone&qid=1670244233&sprefix=smartphon%2Caps%2C213&sr=8-2-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzRzFPVERORFZORjhYJmVuY3J5cHRlZElkPUEwMTIzMTY2M0JKQTRPUU40WDE0RCZlbmNyeXB0ZWRBZElkPUEwOTU5MDIxM1FFMDRPT01YMkFNRCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1">Click here!</a></td>
+                
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>SAMSUNG Galaxy S22 </td>
+                <td><img src="./61U6oC65TTL._AC_SX679_.jpg" alt="SAMSUNG Galaxy A13"/></td>
+                <td><ul><li>8K SUPER STEADY VIDEO</li>
+                <li>NIGHTOGRAPHY plus PORTAIT MODE</li><li>108MP PHOTO RESOLUTION</li></ul></td>
+                <td class="colorChange">989€</td>
+                <td><a href="https://www.amazon.com/SAMSUNG-Smartphone-Unlocked-Brightest-Processor/dp/B09MVZSW5V/ref=sr_1_4?crid=252K048LBCT6J&keywords=smartphone&qid=1670244975&sprefix=smartphon%2Caps%2C213&sr=8-4&th=1">Click here!</a></td>
+                
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>ZTE Blade L9 </td>
+                <td><img src="./51DR4y4eAdL._AC_SX679_.jpg" alt="SAMSUNG Galaxy A13"/></td>
+                <td><ul><li>Dual SIM 4G LTE</li>
+                <li>Quad-Core Android 11</li><li>EXPANDABLE STORAGE</li></ul></td>
+                <td class="colorChange">49.99€</td>
+                <td><a href="https://www.amazon.com/ZTE-Unlocked-Quad-Core-Smartphone-International/dp/B0BD9C8TR1/ref=sr_1_5?crid=252K048LBCT6J&keywords=smartphone&qid=1670244975&sprefix=smartphon%2Caps%2C213&sr=8-5">Click here!</a></td>
+                
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Google Pixel 7-5G  </td>
+                <td><img src="./7173p0j-mbL._AC_SX679_.jpg" alt="SAMSUNG Galaxy A13"/></td>
+                <td><ul><li>VPN by Google One </li>
+                <li>6.3-inch Pixel 7 display </li><li>ultrawide lenses </li></ul></td>
+                <td class="colorChange">224€</td>
+                <td><a href="https://www.amazon.com/SAMSUNG-Unlocked-Smartphone-Expandable-Infinite/dp/B09MZCNGSD/ref=sr_1_2_sspa?crid=252K048LBCT6J&keywords=smartphone&qid=1670244233&sprefix=smartphon%2Caps%2C213&sr=8-2-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzRzFPVERORFZORjhYJmVuY3J5cHRlZElkPUEwMTIzMTY2M0JKQTRPUU40WDE0RCZlbmNyeXB0ZWRBZElkPUEwOTU5MDIxM1FFMDRPT01YMkFNRCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1">Click here!</a></td>
+                
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Google Pixel 6a  </td>
+                <td><img src="./71cllz2mLbL._AC_SX679_.jpg"/></td>
+                <td><ul><li>Android 5G phone</li>
+                <li>fast-charging </li><li>it’s super fast and secure </li></ul></td>
+                <td class="colorChange">379€</td>
+                <td><a href="https://www.amazon.com/Google-Pixel-6a-Smartphone-Megapixel/dp/B0B3PSRHHN/ref=sr_1_3?crid=252K048LBCT6J&keywords=smartphone&qid=1670244975&sprefix=smartphon%2Caps%2C213&sr=8-3&th=1">Click here!</a></td>
+                
+              </tr>
+        </table>
+    </div>
+    <div>
+        <input type="text" placeholder="Enter your message here"/>
+    </div>
+    <div>
+        <button>Send</button>
+    </div>
+    <div class="footer">
+        Shop with HENA
+        <br/>
+        abcstrasse 34
+        27631
+        Frankfurt
+       
+    </div>
+    <button onclick="changeAddress('Shop with HENA defstrasse 56 37651 Hamburg')">Change the address</button>
+
+<script>
+    function changeH1(newTitle){
+        let h1Node=document.querySelector('h1')
+        h1Node.innerText=newTitle;
+    }
+    function changeBackground(){
+        document.body.style.backgroundColor="red";
+    }
+    
+    function changeAddress(newAdd){
+        let add=document.getElementsByClassName('footer')[0];
+        add.innerText=newAdd
+    }
+    function allButtons(){
+        let linknodes=document.getElementsByTagName('a');
+        for(let i=0;i<linknodes.length;i++){
+            let linknode=linknodes[i];
+            linknode.classList.add('linkcss');
+        }
+
+    }
+    function allImages(){
+        let imagenodes=document.getElementsByTagName('img');
+        for(let i=0;i<imagenodes.length;i++){
+            let imagenode=imagenodes[i];
+            imagenode.classList.toggle('imgcss');
+        }
+
+    }
+    function priceColor(){
+        let colors=["red", "green", "yellow", "blue", "orange"]
+        let selectedColor=colors[Math.floor(Math.random()*6)]
+        let priceNodes=document.getElementsByClassName('colorChange');
+        for(let i=0;i<priceNodes.length;i++){
+            let priceNode=priceNodes[i];
+            priceNode.style.color=selectedColor;
+
+        }
+    }
+</script>
+</body>
+</html>
