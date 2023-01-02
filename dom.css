@@ -1,0 +1,32 @@
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width:50%;
+    margin:auto;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    height:200px;
+    width:200px;
+    padding:10px;
+    object-fit: contain;
+
+}
+h1{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+.linkcss{
+    text-decoration: none;
+    color:red;
+}
+.hidden{
+    visibility:hidden;
+   
+}
